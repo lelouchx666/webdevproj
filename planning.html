@@ -1,0 +1,221 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ThemePark</title>
+    <style>
+         header>img
+        {
+           margin-left:5%;
+           margin-top: 5%;
+        
+        }
+        main
+        {
+            margin-left: 5%;
+            margin-right: 5%; 
+            border-style:inset;   
+        } 
+
+        .item1
+        {
+            grid-area:myArea;
+            
+            
+        }
+      
+
+        .item2
+        {
+            grid-area:myArea2;
+        }
+
+        .item3
+        {
+            grid-area:myArea3;
+        }
+     
+
+        .item4
+        {
+            grid-area:myArea4;
+            
+        }
+             
+     
+
+        .grid-container 
+        {
+            display: grid;
+            grid-template-areas: 'myArea myArea2 myArea3 myArea4';                           
+            
+            
+        
+            background-color:black;
+            margin:3%;
+            border-style:inset;
+          
+        }
+        .grid-container > div         
+        {
+                    
+            background-color:white;
+                    
+            text-align:center;
+                    
+            padding: 20px;
+           
+            margin: 3px;
+            
+            
+            font-size:20px;   
+            font-weight: bold;      
+        
+        }
+
+        div > .item        
+        {
+                    
+            font-size: 25px;      
+        
+        }
+
+        .grid-container2 
+        {
+            display: grid;
+            width: 80%;            
+            
+            grid :120px /auto auto auto auto auto;
+        
+       
+            margin-left:4%;
+            
+          
+        }
+        .grid-container2 > div         
+        {
+                    
+            background-color:white;
+                    
+            text-align:center;
+                    
+            text-decoration-style: solid;
+            margin: 1px;
+            
+            
+            font-size:20px;   
+            font-weight: bold;      
+        
+        }
+        div > .itemempty
+        {
+            width:200px;
+        }
+        table 
+        {
+            margin-left: 5%;
+            font-size:20px;   
+            font-weight: bold; 
+        }
+      
+        
+    </style>
+  
+
+</head>
+<body>
+    <header>
+        
+
+        <div class="grid-container2">
+            <div class="logo"><img src="images/logobase.jpg" alt="Image1" width="80px" height="100px" /></div>
+            <div class="itemempty"></div>
+            <div class="item"><a href="related/articles.html"><br><br>Discover The ThemePark </a></div>
+            <div class="item"><a href="related/articles.html"><br><br>Plan Your Visit</a></div>
+            <div class="item"><a href="related/articles.html"><br><br>Tickets</a></div>
+            
+        </div>
+            
+       
+
+    </header>
+    
+    <main>
+        <img src="images/themepark.jpg" alt="Image1" width="100%" height="400px" />
+        
+        <div class="grid-container">
+            
+
+            <div class="item">Single-Day Ticket $42.99</div>
+            <div class="item">Child/Senior $29.99</div>
+            <div class="item">Regular Season Pass $134.98</div>
+            <div class="item">Premium Season Pass $169.98</div>
+            <div class="item5">
+                This ticket is valid for one visit on any operating day in 2022<br>
+                <br>Includes access to both Theme & Water Park!<br>
+                <br>Age 3 years old and younger are FREE<br>
+                <br>All tickets are non-refundable
+            </div>
+
+            <div class="item6">
+                 This ticket is valid for one visit on any operating day in 2022<br>
+                <br> Includes access to both Theme & Water Park!<br>
+                <br>Age 3 years old and younger are FREE<br>
+                <br>All tickets are non-refundable<br>
+                <br>UNDER 48" Tall OR 65+ YEARS OLD<br>
+            </div>
+
+            <div class="item7">
+                Unlimited Visits in 2022<br>
+                <br> Members-only Season Pass Coupons - Exclusive discounts on admission, food, and merchandise!
+            </div>
+
+
+            <div class="item8">
+                Unlimited Visits & Free Parking in 2022 Season<br>
+                <br>Members-only Season Pass Coupons - Exclusive discounts on admission, food, and merchandise!<br>
+                <br>FREE EZ-Band A wearable Season Pass that gets you park admission, replaces your wallet in-park, and redeems all pass benefits!<br>
+                <br>FREE 2022 Souvenir Bottle - $.99 cent refills all season long! (if purchased by 7/4/22)   
+            </div>
+
+        </div>
+        
+        <table bgcolor="white" border="2">                                                                  <!--using <table> to start table using-->
+            <thead>                                                                                         <!--<thead> to group all the headers data-->
+              <tr>                                                                                          <!--<tr> to specify each row -->
+                <th>Ticket & Season Pass</th>                                                                              <!--using <th> to specify table column and bold the header data -->
+              </tr>
+            </thead>
+            <tbody>                                                                                         <!--<tbody> is for all the other main data-->>
+                <tr>
+                  <td>Single-Day Ticket $42.99</td>                                                                             <!--other column data using <td>-->
+                  <td>Number of tickets</td>
+                    
+                </tr>
+                
+                <tr>
+                  <td>Child/Senior $29.99</td>
+                  <td>Number of tickets</td>
+    
+                </tr>
+      
+                <tr>
+                  <td>Regular Season Pass $134.98</td>
+                  <td>Number of tickets</td>
+       
+                </tr>
+                <tr>
+                    <td>Premium Season Pass $169.98</td>
+                    <td>Number of tickets</td>
+         
+                  </tr>
+            </tbody>
+          </table>
+
+
+
+
+    </main>
+
+</body>
+</html>
