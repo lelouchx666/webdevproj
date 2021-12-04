@@ -1,0 +1,137 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.feature-vid{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+.container-page {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.container-attractions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 100px;
+}
+
+.attractions-header {
+    display: flex;
+    justify-content: center;
+}
+
+.attractions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.attractions-row1, .attractions-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.attraction-1, .attraction-2, .attraction-3, .attraction-4, .attraction-5, .attraction-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container-eateries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 100px;
+}
+
+.eateries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eateries-header {
+    display: flex;
+    justify-content: center;
+}
+
+.eateries-row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.eatery-1, .eatery-2, .eatery-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 200px;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 200px;
+
+}
+
+.attrc-img, .eatery-img{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+}
+
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
