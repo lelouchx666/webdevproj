@@ -1,9 +1,113 @@
+@font-face {
+    font-family: 'glossariest_demoregular';
+    src: url('fonts/glossariestdemoregular-webfont.woff2') format('woff2'),
+         url('fonts/glossariestdemoregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: nipcen;
+    src: url('fonts/NipCen Print Unicode.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'aliens__cowslight';
+    src: url('fonts/alienscows-light-trial-webfont.woff2') format('woff2'),
+         url('fonts/alienscows-light-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'aliens__cowsregular';
+    src: url('fonts/alienscows-trial-webfont.woff2') format('woff2'),
+         url('fonts/alienscows-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cartoon_2__moviesregular';
+    src: url('fonts/cartoon_2__movies-webfont.woff2') format('woff2'),
+         url('fonts/cartoon_2__movies-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'clint_markerregular';
+    src: url('fonts/clint_marker-webfont.woff2') format('woff2'),
+         url('fonts/clint_marker-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'sf_movie_posterregular';
+    src: url('fonts/sfmovieposter-webfont.woff2') format('woff2'),
+         url('fonts/sfmovieposter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'sf_movie_posterbold';
+    src: url('fonts/sfmovieposter-bold-webfont.woff2') format('woff2'),
+         url('fonts/sfmovieposter-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+a { text-decoration: none; }
+
+
+body {
+    margin: 0;
+}
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-left: 200px;
     margin-right: 200px;
+    height: 100%;
+}
+
+.nav-logo{
+    max-height: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-text{
+    font-size: 2rem;
 }
 
 .feature-vid{
@@ -15,21 +119,28 @@
 }
 
 .container-page {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
-.container-attractions {
+.container-attractions, .container-eateries {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    margin-left: 200px;
+    margin-right: 200px;
     margin-bottom: 100px;
 }
 
 .attractions-header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #325599;
+    font-family: clint_markerregular;
+    font-size: 3rem;
+    margin-top: 100px;
+    color: white;
 }
 
 .attractions {
@@ -43,7 +154,61 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 40px;
+    align-items: flex-start;
 }
+
+.attrc-title{
+    text-align: center;
+    font-family: clint_markerregular;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.t1-accordion {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  align-items: flex-start;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+
 
 .attraction-1, .attraction-2, .attraction-3, .attraction-4, .attraction-5, .attraction-6 {
     display: flex;
@@ -54,29 +219,30 @@
     margin-right: 50px;
 }
 
-.container-eateries {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    margin-top: 100px;
-}
-
 .eateries {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .eateries-header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FF7974;
+    font-family: clint_markerregular;
+    font-size: 3rem;
+    margin-top: 100px;
+    color: white;
 }
+
 
 .eateries-row1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .eatery-1, .eatery-2, .eatery-3 {
@@ -92,8 +258,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    margin-top: 200px;
+    margin-top: 100px;
+}
+
+.map-text {
+    font-family: clint_markerregular;
+    font-size: 3rem;
 }
 
 .container-footer {
@@ -110,28 +280,45 @@
     max-width: 400px;
 }
 
-
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+.attrc-des, .eatery-des, .panel-text{
+    display: flex;
+    justify-content: center;
+    font-family: 'sf_movie_posterbold', serif;
+    font-size: 2rem;
+    /* letter-spacing: .2rem; */
 }
 
-.active, .accordion:hover {
-  background-color: #ccc;
+
+
+.gallery {
+    margin: 5px;
+    float: left;
+    width: 390px;
+    margin-bottom: 80%;
+    
 }
 
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+.gallery img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    max-width: 350px;
+    font-family: nipcen;
+    text-align: center;
+    font-size: 1.2rem;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
 }
