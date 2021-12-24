@@ -1,54 +1,9 @@
 @font-face {
-    font-family: 'glossariest_demoregular';
-    src: url('fonts/glossariestdemoregular-webfont.woff2') format('woff2'),
-         url('fonts/glossariestdemoregular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
     font-family: nipcen;
     src: url('fonts/NipCen Print Unicode.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
-
-@font-face {
-    font-family: 'aliens__cowslight';
-    src: url('fonts/alienscows-light-trial-webfont.woff2') format('woff2'),
-         url('fonts/alienscows-light-trial-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'aliens__cowsregular';
-    src: url('fonts/alienscows-trial-webfont.woff2') format('woff2'),
-         url('fonts/alienscows-trial-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'cartoon_2__moviesregular';
-    src: url('fonts/cartoon_2__movies-webfont.woff2') format('woff2'),
-         url('fonts/cartoon_2__movies-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
 
 @font-face {
     font-family: 'clint_markerregular';
@@ -59,38 +14,13 @@
 
 }
 
-
-
-
-@font-face {
-    font-family: 'sf_movie_posterregular';
-    src: url('fonts/sfmovieposter-webfont.woff2') format('woff2'),
-         url('fonts/sfmovieposter-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'sf_movie_posterbold';
-    src: url('fonts/sfmovieposter-bold-webfont.woff2') format('woff2'),
-         url('fonts/sfmovieposter-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
 a { text-decoration: none; }
 
 
 body {
     margin: 0;
 }
+
 .navbar {
     display: flex;
     flex-direction: row;
