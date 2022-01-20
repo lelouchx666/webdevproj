@@ -12,3 +12,18 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+
+const rightSide = document.querySelector(".right-side");
+const mobileNav = document.querySelector(".mobile-nav");
+
+mobileNav.addEventListener('click', () => {
+  const visibility = rightSide.getAttribute('data-visible');
+
+  if(visibility === "false"){
+    rightSide.setAttribute("data-visible", true);
+  } else if (visibility === "true") {
+rightSide.setAttribute("data-visible", false);
+  }
+
+});

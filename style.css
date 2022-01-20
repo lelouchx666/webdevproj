@@ -14,6 +14,70 @@
 
 }
 
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    padding-top: 0px;
+    background-color:white;
+    height: 100px;
+   }
+   
+   
+   
+   
+   .right-side {
+    display: flex;
+    padding-top: 60px;
+    font-family: clint_markerregular;
+    font-size: 30px;
+   }
+   
+   .nav-wrapper > .right-side > div {
+    margin-right: 120px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+   }
+   
+   .left-side {
+    display: flex;
+    height: 0px;
+   }
+   
+   .brand {
+    font-family: glossariest_demoregular;
+    padding-top: 35px;
+    font-size: 25px;
+   }
+   
+   .logo img {
+    width: 369px;
+    height: 120px;
+   }
+   
+   
+   .nav-link-wrapper{
+    height: 10px;
+    border-bottom: 5px solid transparent;
+    transition: border-bottom 0.5s;
+    margin-bottom: 1px;
+   }
+   
+   .nav-link-wrapper a {
+    color: grey;
+    text-decoration: none;
+    transition: color 0.5s;
+   }
+   
+   .nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+   }
+   
+   .nav-link-wrapper a:hover {
+    color: red;
+   }
+
+
 a { text-decoration: none; }
 
 
